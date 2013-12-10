@@ -339,16 +339,17 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
                 (org-started-kwd-face (,@fg-yellow ,@bg-base03))
                 (org-cancelled-kwd-face (,@fg-green ,@bg-base03))
                 (org-delegated-kwd-face (,@fg-cyan ,@bg-base03))
+				(org-table (,@fg-blue))
                 ;; table
                 (table-cell (,@fmt-none ,@fg-base0 ,@bg-back))
                 ;; outline - pandocBlockQuoteLeader*
                 (outline-1 (,@fmt-none ,@fg-blue))
                 (outline-2 (,@fmt-none ,@fg-cyan))
                 (outline-3 (,@fmt-none ,@fg-yellow))
-                (outline-4 (,@fmt-none ,@fg-red))
-                (outline-5 (,@fmt-none ,@fg-base0))
-                (outline-6 (,@fmt-none ,@fg-base01))
-                (outline-7 (,@fmt-none ,@fg-orange))
+                (outline-4 (,@fmt-none ,@fg-violet))
+                (outline-5 (,@fmt-none ,@fg-blue))
+                (outline-6 (,@fmt-none ,@fg-cyan))
+                (outline-7 (,@fmt-none ,@fg-yellow))
                 (outline-8 (,@fmt-none ,@fg-violet))
                 ;; speedbar
                 (speedbar-button-face (,@fmt-none ,@fg-base1))
