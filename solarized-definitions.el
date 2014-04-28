@@ -74,6 +74,19 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
    capabilities, etc.")
 
 
+;;quick hack for ansi-colors.
+(set-default 'ansi-color-names-vector
+	  `[,(nth 1 (assoc 'base00 solarized-colors))
+		,(nth 1 (assoc 'red solarized-colors))
+		,(nth 1 (assoc 'green solarized-colors))
+		,(nth 1 (assoc 'yellow solarized-colors))
+		,(nth 1 (assoc 'blue solarized-colors))
+		,(nth 1 (assoc 'magenta solarized-colors))
+		,(nth 1 (assoc 'cyan solarized-colors))
+		,(nth 1 (assoc 'base1 solarized-colors))
+		])
+(setq ansi-color-map (ansi-color-make-color-map))
+
 (defun solarized-face-for-index (facespec index &optional light)
   "Creates a face from facespec where the colors use the names from
   `solarized-colors`."
