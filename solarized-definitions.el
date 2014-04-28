@@ -226,17 +226,19 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
                 (linum (,@fg-base01 ,@bg-base02))
                 (header-line (,@fg-base0 ,@bg-base02 ,@fmt-revbb)) ; Pmenu
                 (highlight (,@bg-base02))
-                (hl-line (:underline ,opt-under ,@bg-base02)) ; CursorLine
+                (hl-line (,@fmt-uopt ,@bg-base02)) ; CursorLine
                 (isearch (,@fmt-stnd ,@fg-orange ,@bg-back)) ; IncSearch
                 (isearch-fail (,@fmt-stnd ,@fg-orange ,@bg-back)) ; IncSearch
                 (lazy-highlight (,@fmt-revr ,@fg-yellow ,@bg-back)) ; Search
+				(match (,@fmt-revr ,@fg-yellow ,@bg-back)) ; match
                 (link (,@fmt-undr ,@fg-violet))
                 (link-visited (,@fmt-undr ,@fg-magenta))
                 (menu (,@fg-base0 ,@bg-base02))
                 (minibuffer-prompt (,@fmt-bold ,@fg-cyan)) ; Question
-                (mode-line (,@fg-base1 ,@bg-base02 ,@fmt-revbb :box nil)) ; StatusLine
+                (mode-line (,@fg-base00 ,@bg-base2 :box nil)) ; StatusLine
                 (mode-line-inactive    ; StatusLineNC
-                 (,@fg-base00 ,@bg-base02 ,@fmt-revbb :box nil))
+                 (,@fg-base01 ,@bg-base02 :box nil))
+				(mode-line-highlight (,@fmt-undr ,@fg-yellow :box nil))
                 (region (,@fg-base01 ,@bg-base03 ,@fmt-revbb)) ; Visual
                 (secondary-selection (,@bg-base02))
                 (shadow (,@fg-base01))
